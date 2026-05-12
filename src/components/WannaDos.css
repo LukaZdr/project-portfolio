@@ -1,0 +1,42 @@
+.wanna-dos-section {
+  padding-bottom: var(--spacing-xxl);
+}
+
+.wanna-dos-subtitle {
+  font-size: 1.25rem;
+  color: var(--text-color-alt);
+  margin-top: -3rem;
+  margin-bottom: 4rem;
+  transition: color 0.5s ease;
+}
+
+.wanna-dos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.wanna-do-card {
+  background-color: var(--bg-color-alt);
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid rgba(46, 31, 26, 0.05);
+  transition: var(--transition-smooth);
+}
+
+.wanna-do-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-color: var(--color-orange);
+}
+
+.wanna-do-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.wanna-do-card p {
+  color: var(--text-color-alt);
+  line-height: 1.5;
+  transition: color 0.5s ease;
+}
