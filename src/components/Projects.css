@@ -1,6 +1,6 @@
 .section-title {
   font-size: 3.5rem;
-  margin-bottom: 4rem;
+  margin-bottom: 0.5rem; /* Significantly reduced to pull content up */
   border-bottom: 2px solid var(--text-color);
   padding-bottom: 1rem;
   display: inline-block;
@@ -129,10 +129,10 @@
 
 .glass-tag {
   font-family: var(--font-sans);
-  font-size: 0.75rem;
+  font-size: 0.65rem; /* Reduced from 0.75rem */
   font-weight: 500;
   letter-spacing: 0.05em;
-  padding: 0.4rem 0.8rem;
+  padding: 0.2rem 0.5rem; /* Reduced from 0.4rem 0.8rem */
   background: rgba(255, 87, 34, 0.1);
   color: var(--accent-color);
   border-radius: 4px;
@@ -251,4 +251,48 @@
   height: 1px;
   background-color: var(--accent-color);
   opacity: 0.4;
+}
+
+.project-category-title {
+  font-size: 2.25rem;
+  margin: 6rem 0 3rem;
+  color: #FFAB91; /* Light, creamy orange for better legibility */
+  font-family: var(--font-serif);
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+}
+
+.project-category-title::before {
+  content: '';
+  width: 30px;
+  height: 2px;
+  background: #FFAB91;
+  opacity: 0.6;
+}
+
+/* Completely remove gap between the main title and the first category */
+.project-category-section:first-of-type .project-category-title {
+  margin-top: 0;
+}
+
+.project-category-title::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--accent-color);
+  opacity: 0.2;
+}
+
+@media (max-width: 768px) {
+  .project-category-title {
+    font-size: 1.75rem;
+    margin: 4rem 0 2rem;
+  }
+  .project-category-section:first-of-type .project-category-title {
+    margin-top: 0;
+  }
 }

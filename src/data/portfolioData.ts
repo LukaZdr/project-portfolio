@@ -10,6 +10,7 @@ export interface Project {
   liveLink?: string;
   notebookLink?: string;
   images: string[];
+  category: 'academic' | 'private';
 }
 
 export interface WannaDo {
@@ -22,6 +23,7 @@ export const featuredProjects: Project[] = [
   {
     id: "medoki",
     title: "MeDoKI – Medical Documentation AI",
+    category: "academic",
     problem: "An AI-agent-based medical treatment platform that assists physicians with therapy planning, diagnosis support, and clinical documentation.",
     motivation: "",
     technologies: ["Python", "PyTorch", "Django", "Tailwind CSS", "PostgreSQL", "Ollama", "Docker"],
@@ -30,18 +32,9 @@ export const featuredProjects: Project[] = [
     images: ["projects/medoki.png"]
   },
   {
-    id: "led-bag",
-    title: "LED Bag",
-    problem: "A combination of fashion and technology — a self-sewn bag enhanced with electronics and custom 3D-printed components that display animated lighting effects.",
-    motivation: "",
-    technologies: ["Arduino", "C++", "3D Printing", "Blender", "Fusion 360", "Sewing"],
-    lessonsLearned: "",
-    obstacles: "",
-    images: ["projects/led_bag.gif"]
-  },
-  {
     id: "tech-debt",
     title: "Technical Debt Game",
+    category: "academic",
     problem: "A board game designed to bridge the gap between management and developers by creating a shared understanding of how to handle technical debt.",
     motivation: "",
     technologies: ["Inkscape", "Game Design", "Pen & Paper"],
@@ -51,8 +44,20 @@ export const featuredProjects: Project[] = [
     images: ["projects/tech_debt.jpg"]
   },
   {
+    id: "led-bag",
+    title: "LED Bag",
+    category: "private",
+    problem: "A combination of fashion and technology — a self-sewn bag enhanced with electronics and custom 3D-printed components that display animated lighting effects.",
+    motivation: "",
+    technologies: ["Arduino", "C++", "3D Printing", "Blender", "Fusion 360", "Sewing"],
+    lessonsLearned: "",
+    obstacles: "",
+    images: ["projects/led_bag.gif"]
+  },
+  {
     id: "pen-plotter",
     title: "Pen Plotter",
+    category: "private",
     problem: "A fully self-designed pen plotter built from scratch as a learning project for 3D design, electronics, and basic robotics.",
     motivation: "",
     technologies: ["Fusion 360", "3D Printing", "Arduino", "Inkscape", "G-code"],
@@ -64,6 +69,7 @@ export const featuredProjects: Project[] = [
   {
     id: "voice-clone",
     title: "Discord Voice Clone Bot",
+    category: "private",
     problem: "A Discord bot that imitates the voices of my friends and me, allowing us to prank and confuse each other during voice chats.",
     motivation: "",
     technologies: ["Python", "PyTorch", "Docker"],
@@ -74,6 +80,7 @@ export const featuredProjects: Project[] = [
   {
     id: "color-by-numbers",
     title: "Color-by-Numbers Project",
+    category: "private",
     problem: "Originally created as a gift idea, this project evolved into an educational tool for children learning to code. The script converts images into printable color-by-numbers templates with generated color palettes.",
     motivation: "",
     technologies: ["Python", "Jupyter Notebook"],
@@ -86,6 +93,7 @@ export const featuredProjects: Project[] = [
   {
     id: "knitting-hack",
     title: "Arduino Knitting Machine Hack",
+    category: "private",
     problem: "A project focused on modifying an old Brother knitting machine using Arduino and AYAB to knit multicolor images and patterns with up to six colors.",
     motivation: "",
     technologies: ["AYAB", "Arduino"],
@@ -97,6 +105,7 @@ export const featuredProjects: Project[] = [
   {
     id: "mipse",
     title: "MIPSE – Multimodal Image Processing Search Engine",
+    category: "private",
     problem: "A CLIP-based multimodal search engine focused on image-content understanding and semantic image retrieval.",
     motivation: "",
     technologies: ["Python", "CLIP", "Flask", "CSS"],

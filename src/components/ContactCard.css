@@ -1,0 +1,122 @@
+.contact-card-window {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 320px;
+  background: rgba(26, 18, 15, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+[data-theme='light'] .contact-card-window {
+  background: rgba(244, 241, 234, 0.95);
+  border: 1px solid rgba(46, 31, 26, 0.1);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+}
+
+.contact-card-window:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent-color);
+}
+
+.mini-terminal-header {
+  height: 28px;
+  background: rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+[data-theme='light'] .mini-terminal-header {
+  background: rgba(46, 31, 26, 0.05);
+  border-bottom: 1px solid rgba(46, 31, 26, 0.05);
+}
+
+.terminal-dots {
+  display: flex;
+  gap: 6px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.dot.red { background: #ff5f56; }
+.dot.yellow { background: #ffbd2e; }
+.dot.green { background: #27c93f; }
+
+.terminal-title {
+  flex: 1;
+  text-align: center;
+  font-size: 0.7rem;
+  opacity: 0.5;
+  margin-right: 24px; /* offset the dots for true center */
+}
+
+.mini-terminal-body {
+  padding: 1.25rem;
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.terminal-comment {
+  color: var(--text-color-alt);
+  opacity: 0.6;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.env-vars {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.env-line {
+  white-space: nowrap;
+}
+
+.env-key {
+  color: #B39DDB; /* Soft Purple */
+}
+
+[data-theme='light'] .env-key {
+  color: #673AB7;
+}
+
+.env-operator {
+  color: var(--text-color);
+  opacity: 0.8;
+  margin: 0 2px;
+}
+
+.env-value {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.env-value:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .contact-card-window {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    width: 100%;
+    margin-top: 2rem;
+    box-shadow: none;
+  }
+}

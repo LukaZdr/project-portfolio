@@ -5,7 +5,7 @@
 .wanna-dos-subtitle {
   font-size: 1.25rem;
   color: var(--text-color-alt);
-  margin-top: -3rem;
+  margin-top: 0.5rem;
   margin-bottom: 4rem;
   transition: color 0.5s ease;
 }

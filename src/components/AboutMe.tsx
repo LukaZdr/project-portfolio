@@ -42,14 +42,14 @@ export const AboutMe: React.FC = () => {
           viewport={{ once: true, margin: "-100px" }}
           variants={windowVariants}
         >
-          {/* Terminal Header */}
+          {/* Terminal Header - Aligned with ContactCard */}
           <div className="terminal-header">
             <div className="terminal-dots">
               <span className="dot red"></span>
               <span className="dot yellow"></span>
               <span className="dot green"></span>
             </div>
-            <div className="terminal-title text-mono">luka — bash — 80x24</div>
+            <div className="terminal-title text-mono">luka.bash</div>
           </div>
 
           {/* Terminal Body */}
