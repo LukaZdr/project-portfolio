@@ -27,7 +27,7 @@ export const featuredProjects: Project[] = [
     technologies: ["Python", "PyTorch", "Django", "Tailwind CSS", "PostgreSQL", "Ollama", "Docker"],
     lessonsLearned: "",
     obstacles: "",
-    images: ["projects/medoki.png"]
+    images: ["/projects/medoki.png"]
   },
   {
     id: "led-bag",
@@ -37,7 +37,7 @@ export const featuredProjects: Project[] = [
     technologies: ["Arduino", "C++", "3D Printing", "Blender", "Fusion 360", "Sewing"],
     lessonsLearned: "",
     obstacles: "",
-    images: ["projects/led_bag.gif"]
+    images: ["/projects/led_bag.gif"]
   },
   {
     id: "tech-debt",
@@ -48,7 +48,7 @@ export const featuredProjects: Project[] = [
     lessonsLearned: "",
     obstacles: "",
     githubLink: "https://github.com/LukaZdr/Tech-Schulden",
-    images: ["projects/tech_debt.jpg"]
+    images: ["/projects/tech_debt.jpg"]
   },
   {
     id: "pen-plotter",
@@ -59,7 +59,7 @@ export const featuredProjects: Project[] = [
     lessonsLearned: "",
     obstacles: "",
     githubLink: "https://github.com/LukaZdr/GrblPlotter/blob/main/README.md",
-    images: ["projects/pen_plotter.gif"]
+    images: ["/projects/pen_plotter.gif"]
   },
   {
     id: "voice-clone",
@@ -69,7 +69,7 @@ export const featuredProjects: Project[] = [
     technologies: ["Python", "PyTorch", "Docker"],
     lessonsLearned: "",
     obstacles: "",
-    images: ["projects/discord_bot.png"]
+    images: ["/projects/discord_bot.png"]
   },
   {
     id: "color-by-numbers",
@@ -81,7 +81,7 @@ export const featuredProjects: Project[] = [
     obstacles: "",
     githubLink: "https://github.com/LukaZdr/paint_by_numbers_image_generator",
     notebookLink: "https://colab.research.google.com/drive/1Qt_ZULUgOXAgHaQq0x-lRRjNuc6yrse7?usp=sharing",
-    images: ["projects/paint_by_numbers.png"]
+    images: ["/projects/paint_by_numbers.png"]
   },
   {
     id: "knitting-hack",
@@ -92,7 +92,7 @@ export const featuredProjects: Project[] = [
     lessonsLearned: "",
     obstacles: "",
     liveLink: "https://www.ayab-knitting.com/",
-    images: ["projects/knitting_machine.png"]
+    images: ["/projects/knitting_machine.png"]
   },
   {
     id: "mipse",
