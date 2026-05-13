@@ -11,7 +11,7 @@ export const Hero: React.FC = () => {
         transition={{ duration: 0.8, ease: "easeOut" }}
         className="hero-content"
       >
-        <motion.div 
+        <motion.div
           className="hero-intro text-sans"
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
@@ -20,20 +20,20 @@ export const Hero: React.FC = () => {
           <span className="intro-line"></span>
           <span className="intro-text">Luka Zdravkovic / Creative Developer</span>
         </motion.div>
-        
-        <motion.h1 
+
+        <motion.h1
           className="hero-title text-serif"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.8 }}
         >
-          Here's what I build<br/>
-          <span className="italic-accent">when nobody tells me to.</span>
+          Here's what I build<br />
+          <span className="italic-accent">when no one holds me back.</span>
         </motion.h1>
-        
+
       </motion.div>
 
-      <motion.div 
+      <motion.div
         className="hero-scroll-indicator"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
