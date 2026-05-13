@@ -66,6 +66,7 @@ const timelineData: TimelineEntry[] = [
     id: 'bsc',
     year: '2017 – 2021',
     title: 'B.Sc. Computer Science',
+    organization: 'University of Hamburg',
     category: 'education',
   },
   {
