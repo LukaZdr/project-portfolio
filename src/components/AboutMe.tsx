@@ -4,13 +4,13 @@ import './AboutMe.css';
 
 export const AboutMe: React.FC = () => {
   const titleText = "A bit about me";
-  
+
   const windowVariants = {
     hidden: { opacity: 0, y: 30 },
-    visible: { 
-      opacity: 1, 
+    visible: {
+      opacity: 1,
       y: 0,
-      transition: { 
+      transition: {
         duration: 0.8,
         when: "beforeChildren",
         staggerChildren: 0.06,
@@ -26,7 +26,7 @@ export const AboutMe: React.FC = () => {
 
   const contentVariants = {
     hidden: { opacity: 0 },
-    visible: { 
+    visible: {
       opacity: 1,
       transition: { delay: 1.2, duration: 0.6 }
     }
@@ -69,22 +69,19 @@ export const AboutMe: React.FC = () => {
                   </motion.span>
                 ))}
               </span>
-              <motion.span 
+              <motion.span
                 className="terminal-cursor"
                 animate={{ opacity: [1, 0, 1] }}
                 transition={{ repeat: Infinity, duration: 0.8 }}
               />
             </div>
 
-            <motion.div 
+            <motion.div
               className="about-text-wrapper"
               variants={contentVariants}
             >
               <p className="about-text">
-                I'm a software engineer who loves bridging the gap between complex engineering and beautiful design. When I'm not writing code for work, I'm usually experimenting with new web technologies, exploring interaction design, or building something just because it sounded fun.
-              </p>
-              <p className="about-text mt-sm">
-                I believe that the best products are not only technically sound, but also a joy to use. My passion is crafting digital experiences that feel intuitive, premium, and alive.
+                For the past eight years, I’ve been working in the tech industry, with recent years focused on AI applications and emerging technologies while building personal projects and experimental systems along the way. I enjoy exploring new ideas, learning through hands-on work, and finding practical ways to apply technology creatively. Much of my visual inspiration comes from 70s design and DIY culture, which is also the reason this website became a lava lamp.
               </p>
             </motion.div>
           </div>

@@ -72,6 +72,11 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
                 <span>Source Code</span>
               </a>
             )}
+            {project.notebookLink && (
+              <a href={project.notebookLink} target="_blank" rel="noreferrer" className="glass-link-btn github-btn">
+                <span>Jupyter Notebook</span>
+              </a>
+            )}
           </div>
         </div>
       </motion.div>

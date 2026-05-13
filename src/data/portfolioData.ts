@@ -8,6 +8,7 @@ export interface Project {
   obstacles: string;
   githubLink?: string;
   liveLink?: string;
+  notebookLink?: string;
   images: string[];
 }
 
@@ -36,7 +37,7 @@ export const featuredProjects: Project[] = [
     technologies: ["Arduino", "C++", "3D Printing", "Blender", "Fusion 360", "Sewing"],
     lessonsLearned: "",
     obstacles: "",
-    images: ["https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&q=80&w=800"]
+    images: ["/projects/led_bag.gif"]
   },
   {
     id: "tech-debt",
@@ -58,7 +59,7 @@ export const featuredProjects: Project[] = [
     lessonsLearned: "",
     obstacles: "",
     githubLink: "https://github.com/LukaZdr/GrblPlotter/blob/main/README.md",
-    images: ["https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&q=80&w=800"]
+    images: ["/projects/pen_plotter.gif"]
   },
   {
     id: "voice-clone",
@@ -79,7 +80,8 @@ export const featuredProjects: Project[] = [
     lessonsLearned: "",
     obstacles: "",
     githubLink: "https://github.com/LukaZdr/paint_by_numbers_image_generator",
-    images: ["https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&q=80&w=800"]
+    notebookLink: "https://colab.research.google.com/drive/1Qt_ZULUgOXAgHaQq0x-lRRjNuc6yrse7?usp=sharing",
+    images: ["/projects/paint_by_numbers.png"]
   },
   {
     id: "knitting-hack",
@@ -90,7 +92,7 @@ export const featuredProjects: Project[] = [
     lessonsLearned: "",
     obstacles: "",
     liveLink: "https://www.ayab-knitting.com/",
-    images: ["https://images.unsplash.com/photo-1584992236310-6edddc08acff?auto=format&fit=crop&q=80&w=800"]
+    images: ["/projects/knitting_machine.png"]
   },
   {
     id: "mipse",
@@ -108,17 +110,17 @@ export const featuredProjects: Project[] = [
 export const wannaDos: WannaDo[] = [
   {
     id: "wd-1",
-    title: "Local-First Markdown Editor",
-    description: "A beautifully crafted, distraction-free markdown editor that syncs via CRDTs instead of a centralized database."
+    title: "Thermomix Knock-Off Cooking Agent",
+    description: "Cheap ALDI Thermomix clones can apparently be hacked, which led me to the idea of building an AI-assisted cooking interface around one. The plan is to create a small web app where I can talk to an agent about what’s currently in my fridge and what I feel like eating. The system would then generate a recipe and send the cooking instructions directly to the machine"
   },
   {
     id: "wd-2",
-    title: "Algorithmic Plant Care Bot",
-    description: "Building a Raspberry Pi powered robot that navigates a track to water household plants based on soil moisture sensors."
+    title: "Building My Own Embroidery Machine",
+    description: "Turning an old sewing machine into an Arduino-based embroidery machine capable of generating custom stitched patterns and graphics. Part restoration project, part hardware experiment, part attempt at giving clothing a little more personality."
   },
   {
     id: "wd-3",
-    title: "WebGL Portfolio V2",
-    description: "Experimenting with Three.js to create a fully immersive 3D experience for my next portfolio iteration."
+    title: "A Digital Lava Lamp",
+    description: "A retro-inspired lava lamp reimagined as a digital object. Instead of wax and liquid, the movement would be generated through LEDs or a small display system, something that feels simultaneously nostalgic and slightly futuristic."
   }
 ];

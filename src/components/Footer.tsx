@@ -20,8 +20,6 @@ export const Footer: React.FC = () => {
         </motion.div>
 
         <div className="footer-bottom">
-          <p className="copyright text-sans">© {new Date().getFullYear()} Designed & Built with passion.</p>
-          
           <div className="social-links-text">
             <a href="https://github.com/LukaZdr" target="_blank" rel="noreferrer" className="text-sans">GitHub</a>
             <a href="https://www.linkedin.com/in/luka-zdravkovic-0211b2167/" target="_blank" rel="noreferrer" className="text-sans">LinkedIn</a>

@@ -227,3 +227,28 @@
     transform: none !important; /* Disable parallax on mobile */
   }
 }
+
+.projects-footer-note {
+  text-align: center;
+  margin: 4rem auto 2rem;
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  color: var(--text-color-alt);
+  opacity: 0.5;
+  font-style: italic;
+  letter-spacing: 0.1em;
+  position: relative;
+  width: fit-content;
+}
+
+.projects-footer-note::before {
+  content: '';
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 1px;
+  background-color: var(--accent-color);
+  opacity: 0.4;
+}
