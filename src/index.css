@@ -57,6 +57,17 @@
     padding: 0;
 }
 
+/* Custom Text Selection Highlight */
+::selection {
+    background-color: var(--color-orange);
+    color: #FFFFFF;
+}
+
+::-moz-selection {
+    background-color: var(--color-orange);
+    color: #FFFFFF;
+}
+
 body {
     font-family: var(--font-sans);
     background-color: var(--bg-color);
