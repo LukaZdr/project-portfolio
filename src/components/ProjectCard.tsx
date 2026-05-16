@@ -50,7 +50,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
         </div>
 
         <div className="project-description">
-          <p className="project-problem-text">{project.problem}</p>
+          <p className="project-problem-text" dangerouslySetInnerHTML={{ __html: project.problem }} />
         </div>
 
         <div className="project-meta">

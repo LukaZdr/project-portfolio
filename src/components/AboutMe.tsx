@@ -33,7 +33,7 @@ export const AboutMe: React.FC = () => {
   };
 
   return (
-    <section className="section">
+    <section className="section" id="about">
       <div className="container">
         <motion.div
           className="terminal-window"
@@ -49,7 +49,9 @@ export const AboutMe: React.FC = () => {
               <span className="dot yellow"></span>
               <span className="dot green"></span>
             </div>
-            <div className="terminal-title text-mono">luka.bash</div>
+            <div className="terminal-title text-mono">
+              <a href="#about" style={{ color: 'inherit', textDecoration: 'none' }}>luka.bash</a>
+            </div>
           </div>
 
           {/* Terminal Body */}

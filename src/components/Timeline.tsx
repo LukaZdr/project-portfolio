@@ -93,7 +93,10 @@ export const Timeline: React.FC = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="section-title text-serif">My Path So Far</h2>
+          <h2 className="section-title text-serif">
+            <a href="#timeline" className="anchor-link">#</a>
+            My Path So Far
+          </h2>
         </motion.div>
 
         <div className="timeline">

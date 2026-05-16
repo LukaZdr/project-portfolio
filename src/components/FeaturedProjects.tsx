@@ -16,7 +16,10 @@ export const FeaturedProjects: React.FC = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="section-title text-serif">My Projects</h2>
+          <h2 className="section-title text-serif">
+            <a href="#projects" className="anchor-link">#</a>
+            My Projects
+          </h2>
         </motion.div>
         
         {/* Academic Projects Section */}

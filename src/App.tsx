@@ -1,6 +1,8 @@
 import { Hero } from './components/Hero';
+import { Agenda } from './components/Agenda';
 import { AboutMe } from './components/AboutMe';
 import { Timeline } from './components/Timeline';
+import { ResearchVision } from './components/ResearchVision';
 import { FeaturedProjects } from './components/FeaturedProjects';
 import { WannaDos } from './components/WannaDos';
 import { Footer } from './components/Footer';
@@ -19,8 +21,10 @@ function App() {
       <div style={{ position: 'relative', zIndex: 1 }}>
         <main>
           <Hero />
+          <Agenda />
           <AboutMe />
           <Timeline />
+          <ResearchVision />
           <FeaturedProjects />
           <WannaDos />
         </main>

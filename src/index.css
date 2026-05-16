@@ -142,6 +142,51 @@ a:hover {
     }
 }
 
+/* Project Description Links */
+.project-link {
+    color: var(--accent-color);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 87, 34, 0.2);
+    transition: all 0.3s ease;
+}
+
+.project-link:hover {
+    border-bottom-color: var(--accent-color);
+    background: rgba(255, 87, 34, 0.05);
+}
+
+/* Anchor Links */
+.section-title {
+    position: relative;
+}
+
+.anchor-link {
+    position: absolute;
+    right: 100%;
+    padding-right: 0.5rem;
+    color: var(--accent-color);
+    opacity: 0;
+    font-family: var(--font-mono);
+    font-size: 0.7em;
+    font-weight: 400;
+    text-decoration: none !important;
+    transition: all 0.3s ease;
+}
+
+.section-title:hover .anchor-link {
+    opacity: 0.5;
+}
+
+.anchor-link:hover {
+    opacity: 1 !important;
+}
+
+@media (max-width: 768px) {
+    .anchor-link {
+        display: none;
+    }
+}
+
 /* Tags */
 .tech-tag {
     display: inline-block;

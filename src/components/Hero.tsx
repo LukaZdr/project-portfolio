@@ -4,7 +4,7 @@ import './Hero.css';
 
 export const Hero: React.FC = () => {
   return (
-    <section className="hero section container">
+    <section className="hero section container" id="hero">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
