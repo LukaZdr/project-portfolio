@@ -28,7 +28,7 @@ export const Hero: React.FC = () => {
           transition={{ delay: 0.4, duration: 0.8 }}
         >
           Here's what I build<br />
-          <span className="italic-accent">when no one holds me back.</span>
+          <span className="italic-accent">when I let creativity flow.</span>
         </motion.h1>
 
       </motion.div>
