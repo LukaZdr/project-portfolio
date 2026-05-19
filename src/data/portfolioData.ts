@@ -35,7 +35,7 @@ export const featuredProjects: Project[] = [
     id: "tech-debt",
     title: "Technical Debt Game",
     category: "academic",
-    problem: "Developed at the <a href='https://www.uni-hamburg.de/' target='_blank' rel='noreferrer' class='project-link'>University of Hamburg</a>, this board game was designed to bridge the gap between management and developers by creating a shared understanding of technical debt. The project won <b>first place</b> in two student research competitions: the internal Software Engineering competition at the University of Hamburg and the nationwide competition hosted by the <a href='https://gi.de/' target='_blank' rel='noreferrer' class='project-link'>Gesellschaft für Informatik (GI)</a> at the University of Paderborn.",
+    problem: "Developed at the <a href='https://www.uni-hamburg.de/' target='_blank' rel='noreferrer' class='project-link'>University of Hamburg</a>, this board game was designed to bridge the gap between management and developers by creating a shared understanding of technical debt. The project won <b>first place</b> in two student research competitions: the <a href='https://www.inf.uni-hamburg.de/inst/basecamp/blog/22-10-20-info-expo-2022.html' target='_blank' rel='noreferrer' class='project-link'>internal Software Engineering competition</a> at the University of Hamburg and the <a href='https://se-2023.gi.de/' target='_blank' rel='noreferrer' class='project-link'>nationwide competition</a> hosted by the <a href='https://gi.de/' target='_blank' rel='noreferrer' class='project-link'>Gesellschaft für Informatik (GI)</a> at the University of Paderborn.",
     motivation: "",
     technologies: ["Inkscape", "Game Design", "Pen & Paper"],
     lessonsLearned: "",
