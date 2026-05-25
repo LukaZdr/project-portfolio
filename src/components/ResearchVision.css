@@ -7,9 +7,19 @@
   margin-bottom: 3rem;
 }
 
-.vision-grid {
+.vision-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.vision-card.main-vision {
+  width: 100%;
+}
+
+.vision-subtopics-grid {
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
 
@@ -60,11 +70,7 @@
   opacity: 0.9;
 }
 
-.vision-secondary-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
+
 
 .vision-card.sub-vision {
   padding: 1.5rem;
@@ -84,8 +90,9 @@
 
 /* Responsive */
 @media (max-width: 900px) {
-  .vision-grid {
+  .vision-subtopics-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 }
 

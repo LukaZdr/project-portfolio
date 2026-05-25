@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Sparkles, Brain, Lightbulb } from 'lucide-react';
+import { Sparkles, Brain, Eye, Activity } from 'lucide-react';
 import './ResearchVision.css';
 
 export const ResearchVision: React.FC = () => {
@@ -20,11 +20,11 @@ export const ResearchVision: React.FC = () => {
           </h2>
         </motion.div>
 
-        <div className="vision-grid">
-          <motion.div 
+        <div className="vision-container">
+          <motion.div
             className="vision-card main-vision"
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
@@ -33,12 +33,12 @@ export const ResearchVision: React.FC = () => {
               <span className="vision-badge glass-tag">Overview</span>
             </div>
             <p className="vision-text text-sans">
-              My research focuses on the intersection of Large Language Models and Software Engineering, specifically looking at how agentic workflows can automate complex development tasks. I am interested in building systems that are not just tools, but collaborators that understand context, history, and intent. My vision is to create a seamless bridge between human creativity and machine execution, leveraging the power of multimodal models to transform how we think about code and documentation.
+              Modern healthcare is highly personalized, yet most medical AI systems evaluate patient data in isolation or rely on population-level datasets. I aim to study how AI models can predict the optimal, individual treatment path for patients by synthesizing heterogeneous data streams, such as clinical history, biomarkers, genomics, and medical imaging. By enabling AI to learn the complex relationships between these modalities, I hope to support a more holistic approach to precision medicine in medical care.
             </p>
           </motion.div>
 
-          <div className="vision-secondary-grid">
-            <motion.div 
+          <div className="vision-subtopics-grid">
+            <motion.div
               className="vision-card sub-vision"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -47,14 +47,14 @@ export const ResearchVision: React.FC = () => {
             >
               <div className="vision-card-header">
                 <Brain size={18} className="vision-icon" />
-                <h3 className="vision-card-title text-serif">Agentic Intelligence</h3>
+                <h3 className="vision-card-title text-serif">Multimodal Fusion</h3>
               </div>
               <p className="vision-subtext text-sans">
-                Moving beyond simple chat interfaces towards autonomous agents that can plan, execute, and self-correct across complex software environments.
+                Investigating intermediate fusion techniques to enable medical foundation models to reason across diverse modalities (e.g., relating genomics to cancer imaging) and construct patient-specific representations.
               </p>
             </motion.div>
 
-            <motion.div 
+            <motion.div
               className="vision-card sub-vision"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -62,11 +62,27 @@ export const ResearchVision: React.FC = () => {
               transition={{ duration: 0.6, delay: 0.6 }}
             >
               <div className="vision-card-header">
-                <Lightbulb size={18} className="vision-icon" />
-                <h3 className="vision-card-title text-serif">Multimodal Synthesis</h3>
+                <Eye size={18} className="vision-icon" />
+                <h3 className="vision-card-title text-serif">Explainable Clinical AI</h3>
               </div>
               <p className="vision-subtext text-sans">
-                Exploring how visual and textual information can be synthesized to provide deeper understanding of UI/UX and architectural patterns.
+                Leveraging Chain-of-Thought reasoning to design transparent models, ensuring cross-modal clinical decisions remain interpretable and trustworthy for physicians in precision medicine settings.
+              </p>
+            </motion.div>
+
+            <motion.div
+              className="vision-card sub-vision"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.8 }}
+            >
+              <div className="vision-card-header">
+                <Activity size={18} className="vision-icon" />
+                <h3 className="vision-card-title text-serif">Clinical Translation</h3>
+              </div>
+              <p className="vision-subtext text-sans">
+                Bridging the gap between laboratory research and real-world practice by applying science transfer expertise to integrate advanced reasoning systems into live clinical workflows.
               </p>
             </motion.div>
           </div>
@@ -75,3 +91,4 @@ export const ResearchVision: React.FC = () => {
     </section>
   );
 };
+
